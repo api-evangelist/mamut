@@ -1,8 +1,27 @@
 aid: mamut
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mamut.png
 name: Mamut
-description: 'Mamut is a company surfaced as a portfolio company of northzone and added to the API Evangelist
-  network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Mamut was a Norwegian business software company (Mamut ASA / Mamut AS) that
+  provided accounting, ERP, CRM, e-commerce and online-presence software to small and
+  medium-sized businesses across the Nordics and parts of Europe. It was acquired by
+  Visma in 2011 and the Mamut product line has since been absorbed into the Visma family
+  of business software. This profile was surfaced as a portfolio company of Northzone
+  and added to the API Evangelist network as a stub for enrichment. As of this pass the
+  mamut.com web server is unreachable (both HTTP and HTTPS time out) and there is no
+  reachable public developer portal, API documentation, or machine-readable API surface
+  under the Mamut brand; enrichment therefore captured only what could be probed from
+  DNS/TLS. Sector: enterprise.'
 url: https://raw.githubusercontent.com/api-evangelist/mamut/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Enterprise
+- Accounting
+- ERP
+- Business Software
+- SMB
+- Norway
+- Visma
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mamut-domain-security.yml
 - type: Website
   url: http://www.mamut.com
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
